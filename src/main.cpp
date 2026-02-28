@@ -176,7 +176,11 @@ void loop() {
   server.handleClient();
 
   if (Mode == "heaton") {
-    Serial.println("MODE: HEAT ON");
+    Serial.print("MODE: HEAT ON");
+    Serial.print(" | Coil 1: "); Serial.print(coil1);
+    Serial.print(" | Coil 2: "); Serial.print(coil2);
+    Serial.print(" | Coil 3: "); Serial.print(coil3);
+    Serial.print(" | Coil 4: "); Serial.println(coil4);
   }
   else if (Mode == "heatoff") {
     Serial.println("MODE: HEAT OFF");
