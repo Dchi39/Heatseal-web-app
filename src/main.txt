@@ -17,6 +17,16 @@ WebServer server(80);
 const byte DNS_PORT = 53;
 
 /* ================= GLOBAL DATA ================= */
+#define sensor1_read 4
+#define sensor2_read 5
+#define sensor3_read 6
+#define sensor4_read 7
+
+#define coil1_out 12
+#define coil2_out 13
+#define coil3_out 14
+#define coil4_out 15
+
 int coil1 = 150;
 int coil2 = 130;
 int coil3 = 110;
